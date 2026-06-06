@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-   /* Banking implementaion with classes using public and private modifier
+   /* Banking implementaion with classes using public and private acess specifier
    in this i will be making 3 private data member and 5 public data member.
    and i will be accessing them through main --> public -->private
      so public data member would be 

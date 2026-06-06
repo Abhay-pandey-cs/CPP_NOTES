@@ -33,14 +33,16 @@ class Banking{
             cust_balance += CRorDB_CB;
             
         }
-        void Loandue(float redLD, int months);// will declare out of class to show prototype method , as we have seen declaration within class for balance update as both are private;
+        void Loandue(float redLD, int months);/*will declare out of class to show prototype method , as we have seen declaration within
+class for balance update as both are private;*/
 
         void getdata(){
            if (cust_loan_due<=0){
                 bool loan_status = 0;
             }
             cout<<"-----------REPORT START---------->"<<endl;
-            cout<<cust_id<<" i.e "<<cust_name<<" has a loan of "<<loan_type<<" is due "<<cust_loan_due<<" is to be paid by "<<cust_loan_monthLEFT<<" months ";
+            cout<<cust_id<<" i.e "<<cust_name<<" has a loan of "<<loan_type<<" is due "<<cust_loan_due<<" is to be paid by ";
+           cout<<cust_loan_monthLEFT<<" months ";
             if(loan_status==0){
                 cout<<"COMPLETED"<<endl;
             }

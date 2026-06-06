@@ -76,7 +76,7 @@ void Banking :: Loandue(float redLD, int months){
         abhay.BalanceUpdate(-90399);
        
         abhay.getdata();
-        abhay.Loandue(400000,1);// will deduct balnce too;
+        abhay.Loandue(400000,1);// will deduct balance too;
          abhay.getdata();
 
 return 0;

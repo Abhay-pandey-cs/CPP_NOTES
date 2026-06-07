@@ -19,7 +19,7 @@ class Employee{
             count++;
         }
         void getData(void){
-            cout<<"THE CURRENT COUNT ACCESddSED THROUG OBJECT WITH DOT OPERATOR IS "<<count<<endl;
+            cout<<"THE CURRENT COUNT ACCESSED THROUG OBJECT WITH DOT OPERATOR IS "<<count<<endl;
 
         }
         static void getCount(void){

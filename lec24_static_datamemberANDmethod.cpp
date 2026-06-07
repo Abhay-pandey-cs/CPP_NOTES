@@ -19,11 +19,11 @@ class Employee{
             count++;
         }
         void getData(void){
-            cout<<"THE CURRENT COUNT ACCESSED THROUG OBJECT WITH DOT OPERATOR IS "<<count<<endl;
+            cout<<"THE CURRENT COUNT ACCESddSED THROUG OBJECT WITH DOT OPERATOR IS "<<count<<endl;
 
         }
         static void getCount(void){
-            cout<<"The current count accessed through main fn using static fn without object"<<count<<endl;
+            cout<<"The current count accessed through main function using static function without object"<<count<<endl;
             //static fn can only access static data member and static fn;
         }
 

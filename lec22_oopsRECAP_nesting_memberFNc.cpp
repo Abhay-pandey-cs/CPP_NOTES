@@ -28,7 +28,7 @@ we cant access private memeber directly
 */
 
 class binary {
-    private: 
+     
     string s;
 
 public:
@@ -53,8 +53,7 @@ void binary::  check_binary(void){
 
     }
 }
-int main()
-{
+int main(){
 binary b;
 b.read();
 b.check_binary();

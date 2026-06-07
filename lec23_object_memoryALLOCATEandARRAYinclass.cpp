@@ -48,7 +48,7 @@ void attendance:: displayStudDetails(void){
 
 int main(){
 attendance abhay;
-abhay.initcounter();
+abhay.initcounter();// intitalised once and incremented for next value location to be added
 abhay.setStudStatus();
 abhay.setStudStatus();
 abhay.setStudStatus();

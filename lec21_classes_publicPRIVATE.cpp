@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
    /* Banking implementaion with classes using public and private acess specifier

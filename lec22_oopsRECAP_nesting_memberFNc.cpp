@@ -30,12 +30,12 @@ we cant access private memeber directly
 
 class binary {
      
-    string s;
-
+    string s;//by default private
+    void check_binary(void);
 public:
     void read(void);
-    void check_binary(void);
-
+  
+    void onescomplement(void);
 };
 
 void binary:: read(void){
@@ -46,18 +46,39 @@ void binary::  check_binary(void){
     for(int i=0;i < s.length() ;i++){
         if(s.at(i)!='0' &&  s.at(i) !='1'){
             cout<<"Incorrect binary format"<<endl;
-            exit(0);
+            exit(0);//exit whole program
         } 
-        else{
-            cout<<"IT'S A BINARY "<<s<<endl;
-        }
+        
 
     }
+
+            cout<<"IT'S A BINARY "<<s<<endl;
+        
+}
+void binary:: onescomplement(void){
+    check_binary();// written without dot operator with object
+        for(int i=0;i<s.length();i++){
+            if(s.at(i) == '0'){
+                s.at(i)='1';
+            
+            }
+            else if (s.at(i)=='1'){
+                s.at(i)='0';
+            }
+            else{
+                cout<<"INVALID";
+                return;
+            }
+        }
+        cout<<"NEW BINARY AFTER COMPLEMENT "<<s<<endl;
 }
 int main(){
 binary b;
 b.read();
-b.check_binary();
+//b.check_binary(); we placed inside ones's complement nested
+// also we kept it private hence main -> public --> private
+b.onescomplement();
+
 return 0;
 
 
